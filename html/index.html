@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Test-App</title>
+    <script src="../script/user-validations.js" defer></script>
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="user-detail-container flex font-style">
+        <form action="user-credentials.html" class="card-form flex">
+          <h1>Please Enter Your Name</h1>
+
+          <input
+            class="validation-input"
+            type="text"
+            placeholder="Enter your name here"
+            id="user-name-input"
+            onkeyup="name_validate()"
+            required="required"
+          />
+
+          <input
+            type="submit"
+            class="validation-button"
+            id="name-validator-button"
+            value="Next"
+            onclick="validate_name_button()"
+            disabled="disabled"
+          />
+        </form>
+      </div>
+    </div>
+
+
+  </body>
+</html>
